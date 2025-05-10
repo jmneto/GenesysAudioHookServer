@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenesysAudioHookServer", "GenesysAudioHookServer\GenesysAudioHookServer.csproj", "{98E0EDF1-780E-42F7-960D-372A350E2EDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98E0EDF1-780E-42F7-960D-372A350E2EDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98E0EDF1-780E-42F7-960D-372A350E2EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98E0EDF1-780E-42F7-960D-372A350E2EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98E0EDF1-780E-42F7-960D-372A350E2EDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EBEFA329-5A4A-4F6F-8692-7FA09B5E824A}
+	EndGlobalSection
+EndGlobal
