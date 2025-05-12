@@ -1,10 +1,10 @@
 # Genesys .NET C# AudioHook Server
 
-This repository provides a reference implementation in **.NET C#** for the [Genesys AudioHook protocol](https://developer.genesys.cloud/devapps/audiohook/){:target="_blank"}. 
+This repository provides a reference implementation in **.NET C#** for the [Genesys AudioHook protocol](https://developer.genesys.cloud/devapps/audiohook/).
 
 The AudioHook server is designed to handle WebSocket connections and process audio streams according to the Genesys AudioHook Protocol specifications, including both control messages and audio data
 
-The [Genesys AudioHook Monitor](https://help.mypurecloud.com/articles/audiohook-monitor-overview/){:target="_blank"} (the client) streams audio to the server (this code).
+The [Genesys AudioHook Monitor](https://help.mypurecloud.com/articles/audiohook-monitor-overview/) (the client) streams audio to the server (this code).
 
 
 > **Note:** This code serves as a sample blueprint to help you get started building an AudioHook server and testing protocol compliance.
@@ -19,7 +19,7 @@ The Genesys AudioHook Monitor (client) streams audio to this server implementati
 
 ### Prerequisites
 
-1. [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet){:target="_blank"} navigate to the project directory.  
+1. [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet) navigate to the project directory.  
 2. (Optional) Set the following environment variables to override defaults:   
    - `LOG_FILE_PATH`: Path to the log file (default: `C:/temp/log.txt`)    
    - `SERVER_URL`: WebSocket server URL (default: `http://localhost:5000/ws/`)    
@@ -34,7 +34,7 @@ The Genesys AudioHook Monitor (client) streams audio to this server implementati
 
 ## Testing the Server
 
-To test the server, use the [Genesys AudioHook Sample Service Test Client](https://github.com/purecloudlabs/audiohook-reference-implementation/blob/main/README.md#test-client){:target="_blank"}.
+To test the server, use the [Genesys AudioHook Sample Service Test Client](https://github.com/purecloudlabs/audiohook-reference-implementation/blob/main/README.md#test-client).
 
 In the `client` directory, there is a simple command-line client. It establishes a connection and synthesizes an audio stream of a 1 kHz tone (stereo or mono depending on which media format the server accepted). 
 
@@ -67,12 +67,12 @@ Once the WAV file ends, the session closes, and the client exits. A close can al
 
 ---
 
-For more details on the Genesys AudioHook protocol, refer to the [Gensys AudioHook official documentation](https://developer.genesys.cloud/devapps/audiohook/){:target="_blank"}.
+For more details on the Genesys AudioHook protocol, refer to the [Gensys AudioHook official documentation](https://developer.genesys.cloud/devapps/audiohook/).
 
 
 # Additional Resources
-- [Genesys AudioHook Protocol](https://developer.genesys.cloud/devapps/audiohook/){:target="_blank"}
-- [Genesys AudioHook Monitor](https://help.mypurecloud.com/articles/audiohook-monitor-overview/){:target="_blank"}
-- [Genesys AudioHook Sample Service](https://github.com/purecloudlabs/audiohook-reference-implementation/tree/main){:target="_blank"}
+- [Genesys AudioHook Protocol](https://developer.genesys.cloud/devapps/audiohook/)
+- [Genesys AudioHook Monitor](https://help.mypurecloud.com/articles/audiohook-monitor-overview/)
+- [Genesys AudioHook Sample Service](https://github.com/purecloudlabs/audiohook-reference-implementation/tree/main)
 
    
