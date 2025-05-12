@@ -8,7 +8,7 @@ internal class Messageheader
     public string? id { get; set; }
     public string? type { get; set; }
     public int seq { get; set; }
-  
+
     public JsonObject? parameters { get; set; }
 }
 
@@ -36,7 +36,7 @@ public class JsonObject : Dictionary<string, object>
             {
                 try
                 {
-                    return JsonSerializer.Deserialize<T>(jsonElement.GetRawText());
+                    return JsonSerializer.Deserialize<T>(jsonElement.GetRawText(), new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
                 }
                 catch (JsonException)
                 {
