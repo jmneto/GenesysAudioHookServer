@@ -1,4 +1,4 @@
-# Genesys .NET C# Audio Hook Server
+# Genesys .NET C# AudioHook Server
 
 This repository provides a reference implementation in **.NET C#** for the [Genesys AudioHook protocol](https://developer.genesys.cloud/devapps/audiohook/). 
 
