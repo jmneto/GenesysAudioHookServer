@@ -4,22 +4,17 @@ This repository provides a reference implementation in **.NET C#** for the [Gene
 
 The AudioHook server is designed to handle WebSocket connections and process audio streams according to the Genesys AudioHook Protocol specifications, including both control messages and audio data.
 
-The [Genesys AudioHook Monitor](https://help.mypurecloud.com/articles/audiohook-monitor-overview/) (the client) streams audio to the server (this code).
-
-
-> **Note:** This code serves as a sample blueprint to help you get started building an AudioHook server and testing protocol compliance.
-
+This project is a sample blueprint to help you get started building an AudioHook servers and testing protocol compliance.
 
 ## Overview
 
-The Genesys AudioHook Monitor (client) streams audio to this server implementation. This server receives, logs, and processes the audio stream in real time.
-
+The Genesys AudioHook Monitor (client) streams audio and control messages to this server implementation. This server receives, logs, and processes the audio stream in real time.
 
 ## Getting Started
 
 ### Prerequisites
 
-1. [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet) navigate to the project directory.  
+1. [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet).  
 2. (Optional) Set the following environment variables to override defaults:   
    - `LOG_FILE_PATH`: Path to the log file (default: `C:/temp/log.txt`)    
    - `SERVER_URL`: WebSocket server URL (default: `http://localhost:5000/ws/`)    
@@ -30,7 +25,6 @@ The Genesys AudioHook Monitor (client) streams audio to this server implementati
    ```
 
 4. The server will start and listen for WebSocket connections. Press `CTRL+C` to stop the server gracefully.
-
 
 ## Testing the Server
 
@@ -48,8 +42,6 @@ cd client
 ts-node src/index.ts --uri ws://localhost:5000/ws --api-key SGVsbG8sIEkgYW0gdGhlIEFQSSBrZXkh --client-secret TXlTdXBlclNlY3JldEtleVRlbGxOby0xITJAMyM0JDU=
 ```
 
-Pressing `CTRL+C` initiates a close transaction followed by disconnect and exit.
-
 #### Using WAV Files as Audio Source
 
 The client supports WAV files as an audio source. Mono or stereo WAV files are supported. They must be encoded in:
@@ -64,11 +56,6 @@ ts-node src/index.ts --uri ws://localhost:5000/ws --api-key SGVsbG8sIEkgYW0gdGhl
 ```
 
 Once the WAV file ends, the session closes, and the client exits. A close can also be initiated with `CTRL+C` at any time.
-
----
-
-For more details on the Genesys AudioHook protocol, refer to the [Gensys AudioHook official documentation](https://developer.genesys.cloud/devapps/audiohook/).
-
 
 # Additional Resources
 - [Genesys AudioHook Protocol](https://developer.genesys.cloud/devapps/audiohook/)
