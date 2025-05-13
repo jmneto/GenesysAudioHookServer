@@ -2,7 +2,7 @@
 
 This repository provides a reference implementation in **.NET C#** for the [Genesys AudioHook protocol](https://developer.genesys.cloud/devapps/audiohook/).
 
-The AudioHook server is designed to handle WebSocket connections and process audio streams according to the Genesys AudioHook Protocol specifications, including both control messages and audio data
+The AudioHook server is designed to handle WebSocket connections and process audio streams according to the Genesys AudioHook Protocol specifications, including both control messages and audio data.
 
 The [Genesys AudioHook Monitor](https://help.mypurecloud.com/articles/audiohook-monitor-overview/) (the client) streams audio to the server (this code).
 
