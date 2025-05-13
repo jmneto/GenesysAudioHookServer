@@ -2,13 +2,9 @@
 
 This repository provides a reference implementation in **.NET C#** for the [Genesys AudioHook protocol](https://developer.genesys.cloud/devapps/audiohook/).
 
-The AudioHook server is designed to handle WebSocket connections and process audio streams according to the Genesys AudioHook Protocol specifications, including both control messages and audio data.
+The .NET C# AudioHook Server is designed to handle WebSocket connections and process audio streams according to the Genesys AudioHook Protocol specifications, including both control messages and audio data.
 
 This project is a sample blueprint to help you get started building an AudioHook servers and testing protocol compliance.
-
-## Overview
-
-The Genesys AudioHook Monitor (client) streams audio and control messages to this server implementation. This server receives, logs, and processes the audio stream in real time.
 
 ## Getting Started
 
@@ -24,7 +20,7 @@ The Genesys AudioHook Monitor (client) streams audio and control messages to thi
    dotnet run --project GenesysAudioHookServer
    ```
 
-4. The server will start and listen for WebSocket connections. Press `CTRL+C` to stop the server gracefully.
+4. The server will start and listen for WebSocket connections. Press `CTRL+C` to stop the server.
 
 ## Testing the Server
 
@@ -37,7 +33,6 @@ In the `client` directory, there is a simple command-line client. It establishes
 Replace the URI, API key, and client secret with your own. Below is an example using the sample API key and client secret from the protocol documentation:
 
 ```
-
 cd client
 ts-node src/index.ts --uri ws://localhost:5000/ws --api-key SGVsbG8sIEkgYW0gdGhlIEFQSSBrZXkh --client-secret TXlTdXBlclNlY3JldEtleVRlbGxOby0xITJAMyM0JDU=
 ```
@@ -54,8 +49,6 @@ Example:
 cd client
 ts-node src/index.ts --uri ws://localhost:5000/ws --api-key SGVsbG8sIEkgYW0gdGhlIEFQSSBrZXkh --client-secret TXlTdXBlclNlY3JldEtleVRlbGxOby0xITJAMyM0JDU= --wavfile example.wav
 ```
-
-Once the WAV file ends, the session closes, and the client exits. A close can also be initiated with `CTRL+C` at any time.
 
 # Additional Resources
 - [Genesys AudioHook Protocol](https://developer.genesys.cloud/devapps/audiohook/)
